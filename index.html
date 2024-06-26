@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="search">
+                <input class="input" type="text" placeholder="Enter your location">
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+        </header>
+        <div class="weather-body">
+            <img class="weather-img" src="/images/snow.png" alt="Weather Image">
+            <div class="weather-box">
+                <p class="temperature">0 <sup>℃</sup></p>
+                <p class="description"> Clouds</p>
+            </div>
+
+            <div class="details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">0%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind">0 km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4aa5804266.js" crossorigin="anonymous"></script>
+</body>
+</html>
