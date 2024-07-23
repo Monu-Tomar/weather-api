@@ -5,6 +5,7 @@ const temperature = document.querySelector('.temperature');
 const description = document.querySelector('.description');
 const humidity = document.getElementById('humidity');
 const wind = document.getElementById('wind');
+const city_name = document.getElementById('city-name');
 
 
 async function checkWeather(city) {
@@ -18,6 +19,7 @@ async function checkWeather(city) {
     description.innerHTML = `${weather_data.weather[0].description}`;
     humidity.innerHTML = `${weather_data.main.humidity}%`;
     wind.innerHTML = `${weather_data.wind.speed}km/h`;
+    city_name.innerHTML = `${weather_data.name}`;
     console.log(weather_data);
 
 
